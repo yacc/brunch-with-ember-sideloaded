@@ -1,5 +1,8 @@
-App = require 'app'
+App.IndexRoute = Ember.Route.extend({
 
-module.exports = App.IndexRoute = Ember.Route.extend
-  model: ->
-    ['red', 'yellow', 'blue']
+	// this may need refactoring ... just don't understand the pattern well enough.
+	model: function() {
+		return App.Activity.find();
+	}
+
+});
