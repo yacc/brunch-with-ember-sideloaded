@@ -1,8 +1,8 @@
 {
   "files": [
     {
-      "from": "controller.coffee.hbs",
-      "to": "app/controllers/{{#camelize}}{{name}}{{/camelize}}Controller.coffee"
+      "from": "controller.js.hbs",
+      "to": "app/controllers/{{#camelize}}{{name}}{{/camelize}}Controller.js"
     }
   ],
   "dependencies": []

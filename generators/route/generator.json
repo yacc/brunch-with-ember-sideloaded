@@ -1,8 +1,8 @@
 {
   "files": [
     {
-      "from": "route.coffee.hbs",
-      "to": "app/routes/{{#camelize}}{{name}}{{/camelize}}Route.coffee"
+      "from": "route.js.hbs",
+      "to": "app/routes/{{#camelize}}{{name}}{{/camelize}}Route.js"
     }
   ],
   "dependencies": []

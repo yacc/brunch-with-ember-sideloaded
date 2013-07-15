@@ -1,0 +1,8 @@
+App.{{#camelize}}{{name}}{{/camelize}}Route = Ember.Route.extend({
+  
+	// this function can typically be removed but if you need to be explict then it may make sense; normally the name would be the singular name of the model
+	model: function() {
+    	return App.{{#camelize}}{{name}}{{/camelize}}.find();
+  	}
+  
+});

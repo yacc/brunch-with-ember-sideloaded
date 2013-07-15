@@ -1,8 +1,8 @@
 {
   "files": [
     {
-      "from": "model.coffee.hbs",
-      "to": "app/models/{{#camelize}}{{name}}{{/camelize}}.coffee"
+      "from": "model.js.hbs",
+      "to": "app/models/{{#camelize}}{{name}}{{/camelize}}.js"
     }
   ],
   "dependencies": []
