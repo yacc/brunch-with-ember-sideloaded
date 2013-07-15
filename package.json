@@ -2,7 +2,7 @@
   "author": "Ken Snyder (Giovanni Collazo)",
   "name": "brunch-with-ember-reloaded",
   "description": "Forked from brunch with ember reloaded but modified to use Javascript and LESS instead of CoffeeScript and Stylus",
-  "version": "0.0.3.1",
+  "version": "0.0.4",
   "homepage": "",
   "repository": {
     "type": "git",
