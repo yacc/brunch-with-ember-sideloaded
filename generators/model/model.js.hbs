@@ -1,3 +1,7 @@
+/*jslint browser: true, jquery: true */ 
+/*global App: false, require: false, DS: false*/
+
+App = require("app");
 App.{{#camelize}}{{name}}{{/camelize}} = DS.Model.extend({
   property: DS.attr("string"),
   property2: DS.attr("string"),

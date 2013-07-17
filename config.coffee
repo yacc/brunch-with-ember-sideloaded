@@ -13,7 +13,7 @@ exports.config =
         before: [
           'vendor/scripts/console-polyfill.js'
           'vendor/scripts/jquery-1.9.1.js'
-          'vendor/scripts/handlebars-1.0.rc.4.js'
+          'vendor/scripts/handlebars.js'
           'vendor/scripts/ember-1.0.0-rc.6.js'
           ]
 

@@ -1,5 +1,5 @@
 // Namespace
-// App = require 'app' (need to look into this before implmenting)
+App = require ('app'); // not sure about this at all
 
 
 // ===== Router =====
@@ -12,7 +12,7 @@ App.Router.map(function() {
 });
 
 // ===== Routes =====
-require 'routes/IndexRoute';
+require ('routes/IndexRoute');
 
 
 // ===== Store =====
@@ -31,5 +31,5 @@ require 'routes/IndexRoute';
 
 
 // ===== Templates =====
-require 'templates/application';
-require 'templates/index';
+require ('templates/application');
+require ('templates/index');
