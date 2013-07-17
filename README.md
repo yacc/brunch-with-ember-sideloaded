@@ -1,4 +1,4 @@
-# brunch-with-ember-reloaded
+# brunch-with-ember-sideloaded
 This repo is meant to be used as [Brunch](http://brunch.io) skeleton for developing [Ember](http://emberjs.com) applications based on the official Ember [Starter Kit](https://github.com/emberjs/starter-kit/archive/master.zip).
 
 But first, a little history ... in the beginning there was `brunch-with-ember`, then there was `brunch-with-ember-reloaded` (written by [@gcollazo](https://github.com/gcollazo/brunch-with-ember-reloaded)), and then I came round and decided that I wasn't cool enough to use CoffeeScript so I've forked and modified my way to `brunch-with-ember-sideloaded` which takes @gcollazo's great skeleton and makes it JavaScript focused and also replaces `Stylus` with `Less`. So ... if you're eager to try out Ember but don't want to tackle CoffeeScript just yet, this might be your skeleton. 
@@ -46,7 +46,7 @@ This skeleton makes use of [scaffolt](https://github.com/paulmillr/scaffolt#read
 scaffolt model <name> 				→ app/models/			Name.coffee
 skaffolt view <name>				→ app/views/			NameView.coffee
 scaffolt controller <name> 			→ app/controllers/		NameController.coffee
-scaffolt arraycontroller <name>			→ app/controllers/		NamesController.coffee
+scaffolt arraycontroller <name>		→ app/controllers/		NamesController.coffee
 scaffolt route <name> 				→ app/routes/			NameRoute.coffee
 scaffolt template <name> 			→ app/templates			name.hbs
 ```
