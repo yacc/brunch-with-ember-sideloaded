@@ -12,7 +12,6 @@ App.Router.map(function() {
 });
 
 // ===== Routes =====
-require ('routes/IndexRoute');
 
 
 // ===== Store =====
@@ -32,4 +31,3 @@ require ('routes/IndexRoute');
 
 // ===== Templates =====
 require ('templates/application');
-require ('templates/index');
