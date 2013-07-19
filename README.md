@@ -1,14 +1,11 @@
-## brunch-with-ember-sideloaded#
+# brunch-with-ember-sideloaded#
 This repo is meant to be used as [Brunch](http://brunch.io) skeleton for developing [Ember](http://emberjs.com) applications based on the official Ember [Starter Kit](https://github.com/emberjs/starter-kit/archive/master.zip).
 
 But first, a little history ... in the beginning there was `brunch-with-ember`, then there was `brunch-with-ember-reloaded` (written by [@gcollazo](https://github.com/gcollazo/brunch-with-ember-reloaded)), and then I came round and decided that I wasn't cool enough to use CoffeeScript so I've forked and modified my way to `brunch-with-ember-sideloaded` which takes @gcollazo's great skeleton and makes it JavaScript focused and also replaces `Stylus` with `Less`. So ... if you're eager to try out Ember but don't want to tackle CoffeeScript just yet, this might be your skeleton. 
 
 
 ## Demo
-I built a demo app using this skeleton, based on the [Building an App with Ember.js](http://www.youtube.com/watch?v=Ga99hMi7wfY) video by [Tom Dale](http://twitter.com/tomdale).
-
-**Demo**: [ember-bloggr](http://dev.gcollazo.com/ember-bloggr)
-**Source**: [https://github.com/gcollazo/ember-bloggr](https://github.com/gcollazo/ember-bloggr)
+Demo application to come soon
 
 ## Versions
 - [Ember v1.0.0-rc.6](http://emberjs.com) - automatically updated by running `cake getember`
