@@ -9,18 +9,12 @@
   ],
   "dependencies": {
     "console-polyfill": "~0.1.0",
-    "moment": "~2.0.0",
+    "moment": "~2.1.0",
     "jquery": "~1.9.1",
-    "normalize-css": "~2.1.2"
+    "normalize-css": "~2.1.2",
+	"bootstrap":"~2.3.2" 
   },
   "overrides": {
-    "backbone": {
-      "dependencies": {
-        "lodash": "*",
-        "jquery": "*"
-      },
-      "main": "backbone.js"
-    },
     "moment": {"main": "moment.js"}
   }
 }

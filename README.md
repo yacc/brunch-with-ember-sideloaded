@@ -5,15 +5,16 @@ But first, a little history ... in the beginning there was `brunch-with-ember`, 
 
 
 ## Demo
-Demo application to come soon
+Demo application to come soon.
 
 ## Versions
 - [Ember v1.0.0-rc.6](http://emberjs.com) - automatically updated by running `cake getember`
 - [Ember-Data v0.13](https://github.com/emberjs/data) - automatically update by running `cake getemberdata`
 - [Handlebars 1.0.0-rc.4](http://handlebarsjs.com) - no automatic update but will have to keep in sync w/ Ember
-- [jQuery v1.9.1](http://jquery.com)
+- [jQuery v1.9.1](http://jquery.com) - managed by `Bower`.
+- [Twitter Bootstrap v2.3.2](http://twitter.github.io/bootstrap/) - managed by `Bower`.
+- [Moment 2.1.0](http://momentjs.com/) - managed by `Bower`.
 - [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com)
-- [Moment 2.1.0](http://momentjs.com/) - very handy JS library for creating human-friendly dates
 
 ## Features
 - **Less** - Expressive, dynamic, robust CSS pre-processor.
@@ -24,26 +25,45 @@ Demo application to come soon
 ## Getting started
 
 ```
-brunch new <appname> --skeleton git@github.com:ksnyde/brunch-with-ember-sideloaded.git
+brunch new git@github.com:ksnyde/brunch-with-ember-sideloaded.git <appname> 
 cd <appname>
 brunch watch -s
 ```
 Open [http://localhost:3333](http://localhost:3333) on your browser.
 
-### Ember Data
-There's a little cake task to download the Ember Data from [builds.emberjs.com](http://builds.emberjs.com) and copy it to your `vendor/scripts` directory.
+## Dependency Automation ##
+There are two ways that external depencies to your Ember app can be kept up-to-date. The Ember specific dependencies (aka, Ember, Ember-Data, and Handlebars) are still kept current by using the `cake` automation described below. All other vendor dependencies are now managed by `Bower`. This seperation is only due to the fact that Ember is still in a very actively changed state and therefore the frequency with which you may be updating the two types of dependencies will vary. I will likely change all depenencies to use the `Bower` package manager at some future points and am open to people comments on this.
+
+### Ember Updates ###
+There's a  cake task to download the Ember and Ember Data from [builds.emberjs.com](http://builds.emberjs.com) and copy it to your `vendor/scripts` directory.
 
 ```
-cake getemberdata
+cake getember						→ get latest build of core Ember
+cake getemberdata					→ get latest build of Ember-Data
 ```
-When the script finishes just add `'vendor/scripts/ember-data-latest.js'` to your `config.coffee` file just under `'vendor/scripts/ember-*.js'`.
 
-### Generators
+The version of handlebars that works with Ember seems to be a bit sensitive at the moment so for now this is still manual (currently using RC4). Will definately look for a better solution going forward and open to any ideas folks have.
+
+### Bower Integration ###
+As of this version of the skeleton there is integration with the [Bower](http://bower.io) package manager. To use this you must make sure you have a recent version of brunch -- just type `npm install -g brunch` and you'll get the latest version -- and then have Bower installed which is achieved with `npm install -g bower`. Once that is done you're all set to take all the benefits of Bower. The key commands you'll be interested in are:
+
+```
+bower list			will list all of the Bower depenencies and what version they are on (including a reference to possible upgrades where applicable)
+bower clear-cache	this will clear the Bower cache and the specified package caches (and is the first step in a update)
+bower update		this will update all the dependencies to the latest version that meets the dependency rules in the `bower.json` file
+```
+
+#### Bower Modules ####
+The specific modules and versions are listed above in the "versions" section.
+
+
+
+## Generators ##
 This skeleton makes use of [scaffolt](https://github.com/paulmillr/scaffolt#readme) generators to help you create common files quicker. To use first install skaffolt globally with `npm install -g scaffolt`. Then you can use the following command to generate files.
 
 ```
 scaffolt model <name> 				→ app/models/			Name.coffee
-skaffolt view <name>				→ app/views/			NameView.coffee
+scaffolt view <name>				→ app/views/			NameView.coffee
 scaffolt controller <name> 			→ app/controllers/		NameController.coffee
 scaffolt arraycontroller <name>		→ app/controllers/		NamesController.coffee
 scaffolt route <name> 				→ app/routes/			NameRoute.coffee
@@ -57,7 +77,6 @@ You can write your tests in the `test` folder, just make sure they are named `*_
 ```
 cake test
 ```
-
 
 ## License
 All of brunch-with-ember-sideloaded is licensed under the MIT license.

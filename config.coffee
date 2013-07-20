@@ -7,14 +7,12 @@ exports.config =
       joinTo:
         'javascripts/app.js': /^app/
         'javascripts/vendor.js': /^vendor/
-        'test/javascripts/test-vendor.js': /^test(\/|\\)(?=vendor)/
 
       order:
         before: [
-          'vendor/scripts/console-polyfill.js'
-          'vendor/scripts/jquery-1.9.1.js'
           'vendor/scripts/handlebars.js'
           'vendor/scripts/ember-latest.js'
+		  'vendor/scripts/ember-data-latest.js'
           ]
 
     stylesheets:
