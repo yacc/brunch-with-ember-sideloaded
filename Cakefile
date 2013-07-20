@@ -1,7 +1,6 @@
 http = require 'http'
 fs = require 'fs'
 
-
 # Test runner
 task 'test', ->
   server = (require 'karma').server
@@ -19,4 +18,11 @@ task 'getemberdata', 'download latest build of Ember Data', (options) ->
 task 'getember', 'download the latest Ember', (options) ->
   file = fs.createWriteStream 'vendor/scripts/ember-latest.js'
   request = http.get 'http://builds.emberjs.com.s3.amazonaws.com/ember-latest.js', (response) ->
+    response.pipe file
+
+
+# Get latest stable build of Ember
+task 'get-stable-ember', 'download the latest Ember', (options) ->
+  file = fs.createWriteStream 'vendor/scripts/ember-latest.js'
+  request = http.get 'http://builds.emberjs.com.s3.amazonaws.com/ember-latest-stable.js', (response) ->
     response.pipe file

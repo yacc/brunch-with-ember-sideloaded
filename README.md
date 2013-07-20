@@ -27,6 +27,7 @@ Demo application to come soon.
 ```
 brunch new git@github.com:ksnyde/brunch-with-ember-sideloaded.git <appname> 
 cd <appname>
+bower install
 brunch watch -s
 ```
 Open [http://localhost:3333](http://localhost:3333) on your browser.
