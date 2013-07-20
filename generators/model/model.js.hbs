@@ -1,10 +1,10 @@
 /*jslint browser: true, jquery: true */ 
-/*global App: false, require: false, DS: false*/
-
+/*global App: false, require: false, DS: false, model: false*/
 App = require("app");
-App.{{#camelize}}{{name}}{{/camelize}} = DS.Model.extend({
+
+module.exports = App.{{#camelize}}{{name}}{{/camelize}} = DS.Model.extend({
   property: DS.attr("string"),
-  property2: DS.attr("string"),
+  property2: DS.attr("date"),
   
   calc_prop: function() {
     return this.get('property') + " " + this.get('property2');

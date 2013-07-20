@@ -1,5 +1,8 @@
-// Namespace
-App = require ('app'); // not sure about this at all
+/*jslint browser: true, jquery: true */ 
+/*global App: true, require: false, Ember: false, module: false*/
+
+// ===== Namespace =====
+App = require ('app');
 
 
 // ===== Router =====
