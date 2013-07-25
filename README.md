@@ -28,10 +28,10 @@ Demo application to come soon.
 ```
 brunch new git@github.com:ksnyde/brunch-with-ember-sideloaded.git <appname> 
 cd <appname>
-bower install
 brunch watch -s
 ```
-Open [http://localhost:3333](http://localhost:3333) on your browser.
+Open [http://localhost:3333](http://localhost:3333) on your browser. Note ... if you don't already have `bower` installed you'll want to install that first. To install bower just
+type `npm install -g bower`. Presto. Done. Now you're ready to have brunch.
 
 ## Dependency Automation ##
 There are two ways that external depencies to your Ember app can be kept up-to-date. The Ember specific dependencies (aka, Ember, Ember-Data, and Handlebars) are still kept current by using the `cake` automation described below. All other vendor dependencies are now managed by `Bower`. This seperation is only due to the fact that Ember is still in a very actively changed state and therefore the frequency with which you may be updating the two types of dependencies will vary. I will likely change all depenencies to use the `Bower` package manager at some future points and am open to people comments on this.
