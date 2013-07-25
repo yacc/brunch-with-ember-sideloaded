@@ -10,10 +10,11 @@ Demo application to come soon.
 ## Versions
 - [Ember v1.0.0-rc.6](http://emberjs.com) - automatically updated by running `cake getember`
 - [Ember-Data v0.13](https://github.com/emberjs/data) - automatically update by running `cake getemberdata`
-- [Handlebars 1.0.0-rc.4](http://handlebarsjs.com) - no automatic update but will have to keep in sync w/ Ember
+- [Handlebars 1.0.0-rc.4](http://handlebarsjs.com) - managed by `Bower` but pegged at rc.4 until Ember is ready for the official 1.0 build
 - [jQuery v1.9.1](http://jquery.com) - managed by `Bower`.
 - [Twitter Bootstrap v2.3.2](http://twitter.github.io/bootstrap/) - managed by `Bower`.
 - [Moment 2.1.0](http://momentjs.com/) - managed by `Bower`.
+- [Select2](http://ivaynberg.github.io/select2/) - managed by `Bower`.
 - [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com)
 
 ## Features
