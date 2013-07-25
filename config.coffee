@@ -7,19 +7,17 @@ exports.config =
       joinTo:
         'javascripts/app.js': /^app/
         'javascripts/vendor.js': /^(bower_components|vendor)/
-
+        'test/javascripts/test-vendor.js': /^test(\/|\\)(?=vendor)/
       order:
         before: [
-          'vendor/scripts/handlebars.js'
           'vendor/scripts/ember-latest.js'
-		  'vendor/scripts/ember-data-latest.js'
-          ]
+        ]
 
-    stylesheets:
-      joinTo:
-        'stylesheets/app.css': /^(app|vendor)/
-      order:
-        before: ['vendor/styles/normalize.css']
+    # stylesheets:
+    #   joinTo:
+    #     'stylesheets/app.css': /^(app|vendor)/
+    #   order:
+    #     before: ['vendor/styles/normalize.css']
 
     templates:
       precompile: true
