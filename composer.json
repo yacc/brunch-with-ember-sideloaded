@@ -1,7 +1,0 @@
-{
-    "require": {
-        "timrwood/moment": "dev-develop",
-		"twitter/bootstrap": "dev-3.0.0-wip",
-		"components/underscore": "dev-master"
-    }
-}

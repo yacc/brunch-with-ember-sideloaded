@@ -24,11 +24,13 @@
     "clean-css-brunch": ">= 1.0 < 1.6",
 	
     "auto-reload-brunch": ">= 1.0 < 1.6",
-    "ember-handlebars-brunch": "git+ssh://git@github.com:bartsqueezy/ember-handlebars-brunch.git",
+    "ember-handlebars-brunch": "git+ssh://git@github.com:ksnyde/ember-handlebars-brunch.git",
 	"underscore-brunch": "git+ssh://git@github.com:trojanowski/underscore-brunch.git"
+	
   },
   "devDependencies": {
-    "karma": "0.8.1"
+    "karma": "0.9.3",
+	"karma-qunit": "*"
 
   }
 }
