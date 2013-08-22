@@ -43,8 +43,6 @@ There's a  cake task to download Ember Data from [builds.emberjs.com](http://bui
 cake getemberdata					→ get latest build of Ember-Data
 ```
 
-The version of handlebars that works with Ember seems to be a bit sensitive at the moment so for now this is still manual (currently using RC4). Will definately look for a better solution going forward and open to any ideas folks have.
-
 ### Bower Integration ###
 As of this version of the skeleton there is integration with the [Bower](http://bower.io) package manager. To use this you must make sure you have a recent version of brunch -- just type `npm install -g brunch` and you'll get the latest version -- and then have Bower installed which is achieved with `npm install -g bower`. Once that is done you're all set to take all the benefits of Bower. The key commands you'll be interested in are:
 
