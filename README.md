@@ -8,9 +8,9 @@ But first, a little history ... in the beginning there was `brunch-with-ember`, 
 Demo application to come soon.
 
 ## Versions
-- [Ember v1.0.0-rc.6](http://emberjs.com) - automatically updated by running `cake getember`
+- [Ember v1.0.0-rc.7](http://emberjs.com) - managed by `Bower`.
 - [Ember-Data v0.13](https://github.com/emberjs/data) - automatically update by running `cake getemberdata`
-- [Handlebars 1.0.0-rc.4](http://handlebarsjs.com) - managed by `Bower` but pegged at rc.4 until Ember is ready for the official 1.0 build
+- [Handlebars 1.0.0](http://handlebarsjs.com) - managed by `Bower`.
 - [jQuery v1.9.1](http://jquery.com) - managed by `Bower`.
 - [Twitter Bootstrap v2.3.2](http://twitter.github.io/bootstrap/) - managed by `Bower`.
 - [Moment 2.1.0](http://momentjs.com/) - managed by `Bower`.
@@ -36,11 +36,10 @@ type `npm install -g bower`. Presto. Done. Now you're ready to have brunch.
 ## Dependency Automation ##
 There are two ways that external depencies to your Ember app can be kept up-to-date. The Ember specific dependencies (aka, Ember, Ember-Data, and Handlebars) are still kept current by using the `cake` automation described below. All other vendor dependencies are now managed by `Bower`. This seperation is only due to the fact that Ember is still in a very actively changed state and therefore the frequency with which you may be updating the two types of dependencies will vary. I will likely change all depenencies to use the `Bower` package manager at some future points and am open to people comments on this.
 
-### Ember Updates ###
-There's a  cake task to download the Ember and Ember Data from [builds.emberjs.com](http://builds.emberjs.com) and copy it to your `vendor/scripts` directory.
+### Ember-Data Updates ###
+There's a  cake task to download Ember Data from [builds.emberjs.com](http://builds.emberjs.com) and copy it to your `vendor/scripts` directory.
 
 ```
-cake getember						→ get latest build of core Ember
 cake getemberdata					→ get latest build of Ember-Data
 ```
 
