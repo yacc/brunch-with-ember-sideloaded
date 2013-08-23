@@ -77,6 +77,8 @@ You can write your tests in the `test` folder, just make sure they are named `*_
 karma start
 ```
 
+For a great screencast on testing with Ember take a look at: Toran Billups' [Integration Testing Your emberjs App with QUnit and Karma](http://toranbillups.com/blog/archive/2013/07/21/Integration-testing-your-emberjs-app-with-QUnit-and-Karma/).
+
 ## License
 All of brunch-with-ember-sideloaded is licensed under the MIT license.
 
