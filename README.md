@@ -34,7 +34,7 @@ Open [http://localhost:3333](http://localhost:3333) on your browser. Note ... if
 type `npm install -g bower`. Presto. Done. Now you're ready to have brunch.
 
 ## Dependency Automation ##
-There are two ways that external depencies to your Ember app can be kept up-to-date. The Ember specific dependencies (aka, Ember, Ember-Data, and Handlebars) are still kept current by using the `cake` automation described below. All other vendor dependencies are now managed by `Bower`. This seperation is only due to the fact that Ember is still in a very actively changed state and therefore the frequency with which you may be updating the two types of dependencies will vary. I will likely change all depenencies to use the `Bower` package manager at some future points and am open to people comments on this.
+The primary mechanism for managing dependencies is now `Bower` although because Ember-Data is still being updated with a high frequency and the Bower package doesn't include the `/dist` folder without manually building it I have opted instead to include a `cake` automation described below. All other vendor dependencies are now managed by `Bower`.
 
 ### Ember-Data Updates ###
 There's a  cake task to download Ember Data from [builds.emberjs.com](http://builds.emberjs.com) and copy it to your `vendor/scripts` directory.
