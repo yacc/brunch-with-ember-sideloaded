@@ -6,6 +6,11 @@ module.exports = App.{{#camelize}}{{name}}{{/camelize}}Route = Ember.Route.exten
   
 	model: function() {
 		return App.{{#camelize}}{{name}}{{/camelize}}.find();
-	}
+	}, 
+	
+	// You can explicitly state which template to load; by default a route will use naming convension to figure this out automatically
+	renderTemplate: function() {
+		// this.render('template-name');
+	},
   
 });
