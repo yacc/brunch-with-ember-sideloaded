@@ -8,10 +8,10 @@ But first, a little history ... in the beginning there was `brunch-with-ember`, 
 Demo application to come soon.
 
 ## Versions
-- [Ember v1.0.0-rc.7](http://emberjs.com) - managed by `Bower`.
-- [Ember-Data v0.13](https://github.com/emberjs/data) - automatically update by running `cake getemberdata`
+- [Ember v1.0.0](http://emberjs.com) - managed by `Bower`.
+- [Ember-Data v1.0-beta1](https://github.com/emberjs/data) - automatically update by running `cake getemberdata`
 - [Handlebars 1.0.0](http://handlebarsjs.com) - managed by `Bower`.
-- [jQuery v1.9.1](http://jquery.com) - managed by `Bower`.
+- [jQuery v2.0.3](http://jquery.com) - managed by `Bower`.
 - [Twitter Bootstrap v2.3.2](http://twitter.github.io/bootstrap/) - managed by `Bower`.
 - [Moment 2.1.0](http://momentjs.com/) - managed by `Bower`.
 - [Select2](http://ivaynberg.github.io/select2/) - managed by `Bower`.
