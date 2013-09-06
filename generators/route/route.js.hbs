@@ -4,13 +4,25 @@ App = require("app");
 
 module.exports = App.{{#camelize}}{{name}}{{/camelize}}Route = Ember.Route.extend({
   
-	model: function() {
-		return App.{{#camelize}}{{name}}{{/camelize}}.find();
+	model: function(params) {
+		return this.store.find('{{name}}',params.{{name}}_id);
+		// if creating a new record use the following instead; example is for an object controller; for an array controller just remove the parameter '{{name}}' from createRecord()
+		// return this.store.createRecord('{{name}}');
 	}, 
+	
+	// Setting a controller properties/state in the router is a common practice. One use case might be taking input parameters from the route and setting them to properties in the controller
+	setupController: function(controller, model) {
+	    controller.set('model', model);
+	  }
 	
 	// You can explicitly state which template to load; by default a route will use naming convension to figure this out automatically
 	renderTemplate: function() {
 		// this.render('template-name');
 	},
+	
+	// The actions property is where all event driven functions should reside
+	actions: {
+	
+	}
   
 });

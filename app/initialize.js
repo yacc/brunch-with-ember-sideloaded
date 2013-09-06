@@ -9,8 +9,6 @@ window.App = require ('app');
 App.Router.map(function() {
 
 	this.resource('index', { path: '/' }, function() {});
-	this.resource('foo', { path: '/foo' }, function() {});
-	this.resource('bar', { path: '/bar' }, function() {});
 	
 });
 
