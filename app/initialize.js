@@ -2,7 +2,7 @@
 /*global App: true, require: false, Ember: false, module: false*/
 
 // ===== Namespace =====
-App = require ('app');
+window.App = require ('app');
 
 
 // ===== Router =====
