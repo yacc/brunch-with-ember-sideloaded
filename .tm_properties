@@ -1,0 +1,2 @@
+excludeDirectories="{}"
+excludeInFileChooser="{vendor,public,bower_components,node_modules,generators}"
