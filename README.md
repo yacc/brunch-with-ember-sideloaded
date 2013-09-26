@@ -9,7 +9,7 @@ Demo application to come soon.
 
 ## Versions
 - [Ember v1.0.0](http://emberjs.com) - managed by `Bower`.
-- [Ember-Data v1.0-beta1](https://github.com/emberjs/data) - automatically update by running `cake getemberdata`
+- [Ember-Data v1.0-beta2](https://github.com/emberjs/data) - managed by `Bower`.
 - [Handlebars 1.0.0](http://handlebarsjs.com) - managed by `Bower`.
 - [jQuery v2.0.3](http://jquery.com) - managed by `Bower`.
 - [Twitter Bootstrap v2.3.2](http://twitter.github.io/bootstrap/) - managed by `Bower`.
