@@ -47,7 +47,7 @@ cake getemberdata					→ get latest build of Ember-Data
 As of this version of the skeleton there is integration with the [Bower](http://bower.io) package manager. To use this you must make sure you have a recent version of brunch -- just type `npm install -g brunch` and you'll get the latest version -- and then have Bower installed which is achieved with `npm install -g bower`. Once that is done you're all set to take all the benefits of Bower. The key commands you'll be interested in are:
 
 ```
-bower list			will list all of the Bower depenencies and what version they are on (including a reference to possible upgrades where applicable)
+bower list			will list all of the Bower dependencies and what version they are on (including a reference to possible upgrades where applicable)
 bower clear-cache	this will clear the Bower cache and the specified package caches (and is the first step in a update)
 bower update		this will update all the dependencies to the latest version that meets the dependency rules in the `bower.json` file
 ```
