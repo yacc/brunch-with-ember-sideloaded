@@ -13,11 +13,11 @@
 		"ember": "~1.0.0",
 		"bootstrap": "~3.0.*",
 		"handlebars": "1.0.0",
-	    "ember-data-shim": "1.0.*",
-	    "ember-addons.bs_for_ember": "*",
+		"ember-data-shim": "1.0.*",
+		"ember-addons.bs_for_ember": "*",
 		"select2": "~3.4.*",
 		"moment": "~2.*",
-	    "bootstrap-datepicker": "~1.*",
+		"bootstrap-datepicker": "~1.*",
 		"normalize-css": "~2.1.2"
 	},
 	"overrides": {
@@ -56,16 +56,16 @@
 				"handlebars": "1.0.0"
 			}
 		},
-	    "bootstrap-datepicker": {
-	      "main": [
-	        "js/bootstrap-datepicker.js",
-	        "css/datepicker.css"
-	      ],
-	      "dependencies": {
-	        "jquery": ">=1.7.1",
-	        "bootstrap": ">=2.0.4"
-	      }
-	    },
+		"bootstrap-datepicker": {
+			"main": [
+				"js/bootstrap-datepicker.js",
+				"css/datepicker.css"
+			],
+			"dependencies": {
+				"jquery": ">=1.7.1",
+				"bootstrap": ">=2.0.4"
+			}
+		},
 		"select2": {
 			"main": [
 				"select2.js",
@@ -80,6 +80,9 @@
 		},
 		"moment": {
 			"main": "moment.js"
+		},
+		"resolutions": {
+			"bootstrap": "~3.0.0"
 		}
 	}
 }
