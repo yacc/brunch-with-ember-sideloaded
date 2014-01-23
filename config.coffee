@@ -13,11 +13,10 @@ exports.config =
           'vendor/scripts/ember-latest.js'
         ]
 
-    # stylesheets:
-    #   joinTo:
-    #     'stylesheets/app.css': /^(app|vendor)/
-    #   order:
-    #     before: ['vendor/styles/normalize.css']
+	    stylesheets:
+	      joinTo: 
+	        'stylesheets/app.css': /^app/
+	        'stylesheets/vendor.css': /^(bower_components|vendor)/
 
     templates:
       precompile: true

@@ -10,12 +10,12 @@
 	"dependencies": {
 		"console-polyfill": "~0.1.0",
 		"jquery": "2.0.*",
-		"ember": "~1.0.0",
+		"ember": "1.*",
 		"bootstrap": "~3.0.*",
-		"handlebars": "1.0.0",
-		"ember-data-shim": "1.0.*",
+		"handlebars": "1.*",
+		"ember-data-shim": "1.*",
 		"ember-addons.bs_for_ember": "*",
-		"select2": "~3.4.*",
+		"select2": "~3.*",
 		"moment": "~2.*",
 		"bootstrap-datepicker": "~1.*",
 		"normalize-css": "~2.1.2"
