@@ -17,8 +17,9 @@ But first, a little history ... in the beginning there was `brunch-with-ember`, 
 - [Swag 1.5.1](http://elving.github.io/swag/) - handlebars templates
 
 ###HTML Infrastructure
-- [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com)
-
+- [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com) - basic HTML starting template 
+- [Modernizer](http://modernizr.com/) - feature detection
+- [Normalize.css](http://necolas.github.io/normalize.css/) - make browsers behave
 
 ## Features
 - **Less** - Expressive, dynamic, robust CSS pre-processor.
