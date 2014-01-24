@@ -6,18 +6,19 @@ But first, a little history ... in the beginning there was `brunch-with-ember`, 
 ## Versions
 
 ###Major Components
-- [Ember v1.4.0-beta.3](http://emberjs.com) - managed by `Bower`.
-- [Ember-Data v1.0-beta.5](https://github.com/emberjs/data) - managed by `Bower`.
-- [Handlebars 1.3.0](http://handlebarsjs.com) - managed by `Bower`.
+- [Ember v1.4.0-beta.3](http://emberjs.com) 
+- [Ember-Data v1.0-beta.5](https://github.com/emberjs/data) 
+- [Handlebars 1.3.0](http://handlebarsjs.com) 
 - [jQuery v2.0.3](http://jquery.com) - managed by `Bower`.
 
 ###A Few Handy Add-ons
-- [Twitter Bootstrap v3.0.3](http://twitter.github.io/bootstrap/) - managed by `Bower`.
-- [Moment 2.5.1](http://momentjs.com/) - managed by `Bower`.
-- [Select2](http://ivaynberg.github.io/select2/) - managed by `Bower`.
+- [Twitter Bootstrap v3.0.3](http://twitter.github.io/bootstrap/) - needs no introduction
+- [Moment 2.5.1](http://momentjs.com/) - useful Time/Date library
+- [Swag 1.5.1](http://elving.github.io/swag/) - handlebars templates
 
 ###HTML Infrastructure
 - [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com)
+
 
 ## Features
 - **Less** - Expressive, dynamic, robust CSS pre-processor.
@@ -55,11 +56,12 @@ The specific modules and versions are listed above in the "versions" section.
 This skeleton makes use of [scaffolt](https://github.com/paulmillr/scaffolt#readme) generators to help you create common files quicker. To use first install skaffolt globally with `npm install -g scaffolt`. Then you can use the following command to generate files.
 
 ```
-scaffolt model <name> 				→ app/models/			Name.coffee
-scaffolt view <name>				→ app/views/			NameView.coffee
-scaffolt controller <name> 			→ app/controllers/		NameController.coffee
-scaffolt arraycontroller <name>		→ app/controllers/		NamesController.coffee
-scaffolt route <name> 				→ app/routes/			NameRoute.coffee
+scaffolt model <name> 				→ app/models/			Name.js
+scaffolt view <name>				→ app/views/			NameView.js
+scaffolt component <name>			→ app/components/		NameView.js
+scaffolt controller <name> 			→ app/controllers/		NameController.js
+scaffolt arraycontroller <name>		→ app/controllers/		NamesController.js
+scaffolt route <name> 				→ app/routes/			NameRoute.js
 scaffolt template <name> 			→ app/templates			name.hbs
 ```
 There's a few more commands you can use with scaffolt and also instruction on how to create your own generators, so make sure you check out the [docs](https://github.com/paulmillr/scaffolt#readme).
@@ -77,8 +79,6 @@ For a great screencast on testing with Ember take a look at: Toran Billups' [Int
 All of brunch-with-ember-sideloaded is licensed under the MIT license.
 
 Copyright (c) 2013 Kenneth Snyder
-
-Copyright (c) 2013 Giovanni Collazo
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

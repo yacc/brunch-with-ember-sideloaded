@@ -17,9 +17,8 @@
 		"handlebars": "1.*",
 		"ember-data-shim": "1.*",
 		"ember-addons.bs_for_ember": "*",
-		"select2": "~3.*",
-		"moment": "~2.*",
-		"normalize-css": "~2.1.2"
+		"swag": "0.*",
+		"moment": "~2.*"
 	},
 	"overrides": {
 		"modernizr": {
@@ -59,18 +58,6 @@
 				"bootstrap": "3.0.0",
 				"ember": "1.0.0",
 				"handlebars": "1.0.0"
-			}
-		},
-		"select2": {
-			"main": [
-				"select2.js",
-				"select2.css",
-				"select2.png",
-				"select2x2.png",
-				"select2-spinner.gif"
-			],
-			"dependencies": {
-				"jquery": ">= 1.7.1"
 			}
 		},
 		"moment": {
