@@ -17,6 +17,7 @@ But first, a little history ... in the beginning there was `brunch-with-ember`, 
 - [Fontawesome 4](http://fontawesome.io/) - fonts are good but fonts of icons? ... Awesome
 - [Moment 2.x](http://momentjs.com/) - useful Time/Date library
 - [Swag 1.5](http://elving.github.io/swag/) - handlebars templates
+- [Lo-Dash 2.4](http://lodash.com/docs) - utility library
 
 ###HTML Infrastructure
 - [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com) - basic HTML starting template 

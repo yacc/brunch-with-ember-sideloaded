@@ -19,6 +19,7 @@
 		"ember-addons.bs_for_ember": "*",
 		"font-awesome": "4.*",
 		"swag": "0.*",
+		"lodash": "2.4.*",
 		"moment": "~2.*"
 	},
 	"overrides": {
