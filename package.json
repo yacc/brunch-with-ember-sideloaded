@@ -1,6 +1,6 @@
 {
-  "author": "Ken Snyder (Giovanni Collazo)",
-  "name": "brunch-with-ember-reloaded",
+  "author": "Ken Snyder",
+  "name": "brunch-with-ember-sideloaded",
   "description": "Forked from brunch-with-ember-reloaded but modified to use Javascript and LESS instead of CoffeeScript and Stylus",
   "version": "0.0.4",
   "homepage": "",

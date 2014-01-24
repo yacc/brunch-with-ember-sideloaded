@@ -1,13 +1,15 @@
 {
 	"name": "brunch-with-ember-sideloaded",
 	"repo": "ksnyde/brunch-with-ember-sideloaded",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"ignore": [
 		"**/.*",
 		"node_modules",
 		"components"
 	],
 	"dependencies": {
+		"modernizr": "2.*",
+		"normalize-css":"2.*",
 		"console-polyfill": "~0.1.0",
 		"jquery": "2.0.*",
 		"ember": "1.*",
@@ -17,10 +19,13 @@
 		"ember-addons.bs_for_ember": "*",
 		"select2": "~3.*",
 		"moment": "~2.*",
-		"bootstrap-datepicker": "~1.*",
 		"normalize-css": "~2.1.2"
 	},
 	"overrides": {
+		"modernizr": {
+			"main":"modernizr.js",
+			"dependencies":{}
+		},
 		"jquery": {
 			"main": "jquery.js"
 		},
@@ -54,16 +59,6 @@
 				"bootstrap": "3.0.0",
 				"ember": "1.0.0",
 				"handlebars": "1.0.0"
-			}
-		},
-		"bootstrap-datepicker": {
-			"main": [
-				"js/bootstrap-datepicker.js",
-				"css/datepicker.css"
-			],
-			"dependencies": {
-				"jquery": ">=1.7.1",
-				"bootstrap": ">=2.0.4"
 			}
 		},
 		"select2": {

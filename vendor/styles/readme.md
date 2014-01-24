@@ -1,0 +1,1 @@
+Put static 3rd party style sheets that aren't available from `bower` here. You will also need to manually reference them in the `index.html` to use the stylesheet(s). In a vast majority of cases you should NOT do this and instead find it on Bower or put it onto Bower. :)
