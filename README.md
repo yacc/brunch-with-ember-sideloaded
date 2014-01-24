@@ -3,18 +3,20 @@ This repo is meant to be used as [Brunch](http://brunch.io) skeleton for develop
 
 But first, a little history ... in the beginning there was `brunch-with-ember`, then there was `brunch-with-ember-reloaded` (written by [@gcollazo](https://github.com/gcollazo/brunch-with-ember-reloaded)), and then I came round and decided that I wasn't cool enough to use CoffeeScript so I've forked and modified my way to `brunch-with-ember-sideloaded` which takes @gcollazo's great skeleton and makes it JavaScript focused and also replaces `Stylus` with `Less`. So ... if you're eager to try out Ember but don't want to tackle CoffeeScript just yet, this might be your skeleton. 
 
-
-## Demo
-Demo application to come soon.
-
 ## Versions
+
+###Major Components
 - [Ember v1.4.0-beta.3](http://emberjs.com) - managed by `Bower`.
 - [Ember-Data v1.0-beta.5](https://github.com/emberjs/data) - managed by `Bower`.
 - [Handlebars 1.3.0](http://handlebarsjs.com) - managed by `Bower`.
 - [jQuery v2.0.3](http://jquery.com) - managed by `Bower`.
+
+###A Few Handy Add-ons
 - [Twitter Bootstrap v3.0.3](http://twitter.github.io/bootstrap/) - managed by `Bower`.
 - [Moment 2.5.1](http://momentjs.com/) - managed by `Bower`.
 - [Select2](http://ivaynberg.github.io/select2/) - managed by `Bower`.
+
+###HTML Infrastructure
 - [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com)
 
 ## Features
@@ -34,17 +36,9 @@ Open [http://localhost:3333](http://localhost:3333) on your browser. Note ... if
 type `npm install -g bower`. Presto. Done. Now you're ready to have brunch.
 
 ## Dependency Automation ##
-The primary mechanism for managing dependencies is now `Bower` although because Ember-Data is still being updated with a high frequency and the Bower package doesn't include the `/dist` folder without manually building it I have opted instead to include a `cake` automation described below. All other vendor dependencies are now managed by `Bower`.
-
-### Ember-Data Updates ###
-There's a  cake task to download Ember Data from [builds.emberjs.com](http://builds.emberjs.com) and copy it to your `vendor/scripts` directory.
-
-```
-cake getemberdata					→ get latest build of Ember-Data
-```
 
 ### Bower Integration ###
-As of this version of the skeleton there is integration with the [Bower](http://bower.io) package manager. To use this you must make sure you have a recent version of brunch -- just type `npm install -g brunch` and you'll get the latest version -- and then have Bower installed which is achieved with `npm install -g bower`. Once that is done you're all set to take all the benefits of Bower. The key commands you'll be interested in are:
+As of this version of the skeleton there is 100% integration with the [Bower](http://bower.io) package manager. To use this you must make sure you have a recent version of brunch -- just type `npm install -g brunch` and you'll get the latest version -- and then have Bower installed which is achieved with `npm install -g bower`. Once that is done you're all set to take all the benefits of Bower. The key commands you'll be interested in are:
 
 ```
 bower list			will list all of the Bower dependencies and what version they are on (including a reference to possible upgrades where applicable)
