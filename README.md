@@ -9,7 +9,7 @@ But first, a little history ... in the beginning there was `brunch-with-ember`, 
 - [Ember v1.4.0-beta.3](http://emberjs.com) 
 - [Ember-Data v1.0-beta.5](https://github.com/emberjs/data) 
 - [Handlebars 1.3.0](http://handlebarsjs.com) 
-- [jQuery v2.0.3](http://jquery.com) - managed by `Bower`.
+- [jQuery v2.0.3](http://jquery.com) 
 
 ###A Few Handy Add-ons
 - [Twitter Bootstrap v3.0.3](http://twitter.github.io/bootstrap/) - needs no introduction
@@ -28,6 +28,19 @@ But first, a little history ... in the beginning there was `brunch-with-ember`, 
 - **uglify-js-brunch** - Adds UglifyJS support to brunch.
 
 ## Getting started
+###Pre-requisites 
+You must have `npm`, `bower` and `brunch` installed and it is recommended to install `scaffolt` as well. As bower, brunch and scaffolt are managed with `npm` you must install this first. 
+
+- Install npm: [https://github.com/npm/npm](https://github.com/npm/npm)
+
+Once that is done installing bruch and scaffolt is as easy as:
+
+1. `npm -g install bower`
+1. `npm -g install brunch`
+1. `npm -g install scaffolt`
+
+###Using this brunch template
+Now that all the dependencies are out of the way, just go to your terminal and change directories to the root of where you want to install you new ember application and type the following:
 
 ```
 brunch new git@github.com:ksnyde/brunch-with-ember-sideloaded.git <appname> 
@@ -40,7 +53,7 @@ type `npm install -g bower`. Presto. Done. Now you're ready to have brunch.
 ## Dependency Automation ##
 
 ### Bower Integration ###
-As of this version of the skeleton there is 100% integration with the [Bower](http://bower.io) package manager. To use this you must make sure you have a recent version of brunch -- just type `npm install -g brunch` and you'll get the latest version -- and then have Bower installed which is achieved with `npm install -g bower`. Once that is done you're all set to take all the benefits of Bower. The key commands you'll be interested in are:
+As of this version of the skeleton there is 100% integration with the [Bower](http://bower.io) package manager. The key commands you'll be interested in are:
 
 ```
 bower list			will list all of the Bower dependencies and what version they are on (including a reference to possible upgrades where applicable)
