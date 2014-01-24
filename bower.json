@@ -17,6 +17,7 @@
 		"handlebars": "1.*",
 		"ember-data-shim": "1.*",
 		"ember-addons.bs_for_ember": "*",
+		"font-awesome": "4.*",
 		"swag": "0.*",
 		"moment": "~2.*"
 	},
@@ -59,6 +60,9 @@
 				"ember": "1.0.0",
 				"handlebars": "1.0.0"
 			}
+		},
+		"font-awesome":{
+			"main": "css/font-awesome.css"
 		},
 		"moment": {
 			"main": "moment.js"

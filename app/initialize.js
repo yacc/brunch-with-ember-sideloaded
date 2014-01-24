@@ -15,6 +15,9 @@ App.Router.map(function() {
 // ===== Routes =====
 
 
+// ===== Controllers =====
+require('controllers/ApplicationController');
+
 // ===== Store =====
 
 
@@ -23,8 +26,6 @@ App.Router.map(function() {
 
 // ===== Views =====
 
-
-// ===== Controllers =====
 
 
 // ===== Template Helpers =====

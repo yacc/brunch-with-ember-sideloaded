@@ -12,9 +12,11 @@ But first, a little history ... in the beginning there was `brunch-with-ember`, 
 - [jQuery v2.0.3](http://jquery.com) 
 
 ###A Few Handy Add-ons
-- [Twitter Bootstrap v3.0.3](http://twitter.github.io/bootstrap/) - needs no introduction
-- [Moment 2.5.1](http://momentjs.com/) - useful Time/Date library
-- [Swag 1.5.1](http://elving.github.io/swag/) - handlebars templates
+- [Twitter Bootstrap 3](http://twitter.github.io/bootstrap/) - needs no introduction
+- [Bootstrap for Ember](https://github.com/ember-addons/bootstrap-for-ember) - bringing Bootstrap goodness to Ember
+- [Fontawesome 4](http://fontawesome.io/) - fonts are good but fonts of icons? ... Awesome
+- [Moment 2.x](http://momentjs.com/) - useful Time/Date library
+- [Swag 1.5](http://elving.github.io/swag/) - handlebars templates
 
 ###HTML Infrastructure
 - [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com) - basic HTML starting template 
@@ -50,21 +52,6 @@ brunch watch -s
 Open [http://localhost:3333](http://localhost:3333) on your browser. Note ... if you don't already have `bower` installed you'll want to install that first. To install bower just
 type `npm install -g bower`. Presto. Done. Now you're ready to have brunch.
 
-## Dependency Automation ##
-
-### Bower Integration ###
-As of this version of the skeleton there is 100% integration with the [Bower](http://bower.io) package manager. The key commands you'll be interested in are:
-
-```
-bower list			will list all of the Bower dependencies and what version they are on (including a reference to possible upgrades where applicable)
-bower clear-cache	this will clear the Bower cache and the specified package caches (and is the first step in a update)
-bower update		this will update all the dependencies to the latest version that meets the dependency rules in the `bower.json` file
-```
-
-#### Bower Modules ####
-The specific modules and versions are listed above in the "versions" section.
-
-
 
 ## Generators ##
 This skeleton makes use of [scaffolt](https://github.com/paulmillr/scaffolt#readme) generators to help you create common files quicker. To use first install skaffolt globally with `npm install -g scaffolt`. Then you can use the following command to generate files.
@@ -80,7 +67,7 @@ scaffolt template <name> 			→ app/templates			name.hbs
 ```
 There's a few more commands you can use with scaffolt and also instruction on how to create your own generators, so make sure you check out the [docs](https://github.com/paulmillr/scaffolt#readme).
 
-### Testing
+## Testing
 You can write your tests in the `test` folder, just make sure they are named `*_test.js`. You can customize the test to user PhantomJS, Chrome, Firefox, Safari or Opera on the `karma.conf.js` file in the root directory. There's a lot of other settings there as well. Run tests with:
 
 ```
@@ -88,6 +75,32 @@ karma start
 ```
 
 For a great screencast on testing with Ember take a look at: Toran Billups' [Integration Testing Your emberjs App with QUnit and Karma](http://toranbillups.com/blog/archive/2013/07/21/Integration-testing-your-emberjs-app-with-QUnit-and-Karma/).
+
+
+##Other Goodies
+
+###JSHinting
+If you like to run JSHint/Lint on your code -- and come on, you *do* like doing it right? -- then you'll be happy to know that the 
+scaffolt library already has JSHinting included so that you don't have contend with a bunch of "non issues". For instance, a controller might start with the following definition:
+
+	/*jslint browser: true, jquery: true */ 
+	/*global App: true, require: false, Ember: false, module: false, console:false*/
+
+This should already be pretty good but if you have any improvements send me a PR and I'll incorporate it in.
+
+###Textmate Properties
+There is a `.tm_properties` file at the root of the template that will instruct Textmate (if you use it) to only look in the right places for files. 
+
+## Dependency Automation ##
+
+As of this version of the skeleton there is 100% integration with the [Bower](http://bower.io) package manager. The key commands you'll be interested in are:
+
+```
+bower list			will list all of the Bower dependencies and what version they are on (including a reference to possible upgrades where applicable)
+bower clear-cache	this will clear the Bower cache and the specified package caches (and is the first step in a update)
+bower update		this will update all the dependencies to the latest version that meets the dependency rules in the `bower.json` file
+```
+
 
 ## License
 All of brunch-with-ember-sideloaded is licensed under the MIT license.
