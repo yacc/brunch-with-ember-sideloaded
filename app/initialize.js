@@ -7,9 +7,7 @@ window.App = require ('app');
 
 // ===== Router =====
 App.Router.map(function() {
-
 	this.resource('index', { path: '/' }, function() {});
-	
 });
 
 // ===== Routes =====
@@ -33,3 +31,5 @@ require('controllers/ApplicationController');
 
 // ===== Templates =====
 require ('templates/application');
+
+// ===== Objects =====
