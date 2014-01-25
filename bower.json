@@ -20,7 +20,8 @@
 		"font-awesome": "4.*",
 		"swag": "0.*",
 		"lodash": "2.4.*",
-		"moment": "~2.*"
+		"moment": "~2.*",
+		"jquery.cookie": "1.4.*"
 	},
 	"overrides": {
 		"modernizr": {

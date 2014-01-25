@@ -4,17 +4,4 @@ App = require("app");
 
 module.exports = App.{{#camelize}}{{name}}{{/camelize}}View = Ember.View.extend({
 
-	// layouts surround the view's DOM element, templates are included inside the view's DOM element
-	layoutName: '{{name}}_layout',
-	templateName: '{{name}}',
-	
-	// if you are using jQuery functionality in your view than these two functions are a good way to tap into this logic
-	didInsertElement : function(){
-		this._super();
-		Ember.run.scheduleOnce('afterRender', this, this.afterRenderEvent);
-	},
-	afterRenderEvent : function(){
-		// implement this hook in your own subclasses and run your jQuery logic there
-	}
-
 });

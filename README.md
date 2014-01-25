@@ -23,6 +23,7 @@ But first, a little history ... in the beginning there was `brunch-with-ember`, 
 - [HTML5 Boilerplate v4.2.0](http://html5boilerplate.com) - basic HTML starting template 
 - [Modernizer](http://modernizr.com/) - feature detection
 - [Normalize.css](http://necolas.github.io/normalize.css/) - make browsers behave
+- [JQuery Cookie](https://github.com/carhartl/jquery-cookie) - make setting/getting cookies simple
 
 ## Features
 - **Less** - Expressive, dynamic, robust CSS pre-processor.
@@ -64,6 +65,7 @@ scaffolt component <name>			→ app/components/		NameView.js
 scaffolt controller <name> 			→ app/controllers/		NameController.js
 scaffolt arraycontroller <name>		→ app/controllers/		NamesController.js
 scaffolt route <name> 				→ app/routes/			NameRoute.js
+scaffolt object <name> 				→ app/objects			Name.hbs
 scaffolt template <name> 			→ app/templates			name.hbs
 ```
 There's a few more commands you can use with scaffolt and also instruction on how to create your own generators, so make sure you check out the [docs](https://github.com/paulmillr/scaffolt#readme).
@@ -91,6 +93,9 @@ This should already be pretty good but if you have any improvements send me a PR
 
 ###Textmate Properties
 There is a `.tm_properties` file at the root of the template that will instruct Textmate (if you use it) to only look in the right places for files. 
+
+###Comprehensive Logging
+By default apps built with this template will log **lots** of information to the console for debugging purposes. This is all found in the `app.js` file and can be turned off if and where desired.
 
 ## Dependency Automation ##
 

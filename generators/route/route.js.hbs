@@ -6,8 +6,9 @@ module.exports = App.{{#camelize}}{{name}}{{/camelize}}Route = Ember.Route.exten
   
 	model: function(params) {
 		return this.store.find('{{name}}',params.{{name}}_id);
-		// if creating a new record use the following instead; example is for an object controller; for an array controller just remove the parameter '{{name}}' from createRecord()
-		// return this.store.createRecord('{{name}}');
+		// if creating a new record use something like: 
+		return this.store.createRecord('{{name}}');
+		// example is for an object controller; for an array controller just remove the parameter '{{name}}' from createRecord()
 	}, 
 	
 	// Setting a controller properties/state in the router is a common practice. One use case might be taking input parameters from the route and setting them to properties in the controller
@@ -20,7 +21,7 @@ module.exports = App.{{#camelize}}{{name}}{{/camelize}}Route = Ember.Route.exten
 		// this.render('template-name');
 	},
 	
-	// The actions property is where all event driven functions should reside
+	// Action Handlers
 	actions: {
 	
 	}

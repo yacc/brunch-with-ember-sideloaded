@@ -10,4 +10,4 @@ module.exports = App.ApplicationController = Ember.ObjectController.extend({
 			this.set('showDetails',!this.get('showDetails'));
 		}
 	}
-});
+}); 

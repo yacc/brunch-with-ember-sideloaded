@@ -1,2 +1,3 @@
 excludeDirectories="{}"
+excludeInFolderSearch="{vendor,public,bower_components,node_modules,generators}"
 excludeInFileChooser="{vendor,public,bower_components,node_modules,generators}"
