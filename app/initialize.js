@@ -1,8 +1,11 @@
 /*jslint browser: true, jquery: true */ 
-/*global App: true, require: false, Ember: false, module: false*/
+/*global App: true, require: false*/
 
 // ===== Namespace =====
 window.App = require ('app');
+
+
+// ===== Objects =====
 
 
 // ===== Router =====
@@ -32,4 +35,3 @@ require('controllers/ApplicationController');
 // ===== Templates =====
 require ('templates/application');
 
-// ===== Objects =====
