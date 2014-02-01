@@ -16,7 +16,7 @@
 		"bootstrap": "~3.0.*",
 		"handlebars": "1.*",
 		"ember-data-shim": "1.*",
-		"ember-addons.bs_for_ember": "*",
+		"ember-addons.bs_for_ember": "0.5.2",
 		"font-awesome": "4.*",
 		"swag": "0.*",
 		"lodash": "2.4.*",
