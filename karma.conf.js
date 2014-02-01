@@ -2,10 +2,12 @@
 // Generated on Fri Aug 23 2013 00:11:25 GMT+0100 (BST)
 
 module.exports = function(karma) {
-  karma.configure({
+  karma.set({
 
     // base path, that will be used to resolve files and exclude
     basePath: '',
+	
+	
 
 
     // frameworks to use
@@ -17,6 +19,7 @@ module.exports = function(karma) {
     files: [
     'public/javascripts/vendor.js',
     'public/javascripts/app.js',
+	'test/testLoader.js',
 	'test/helpers.js',
 	'test/**/*_test.js'
     ],
@@ -61,7 +64,16 @@ module.exports = function(karma) {
     // - PhantomJS
     // - IE (only Windows)
     browsers: ['PhantomJS'],
+	
+	plugins: [
+		'karma-qunit',
+		'karma-chrome-launcher',
+		'karma-phantomjs-launcher'
+	],
 
+	preprocessors: {
+		"**/*.handlebars": 'ember'
+	},
 
     // If browser does not capture in given timeout [ms], kill it
     captureTimeout: 60000,
