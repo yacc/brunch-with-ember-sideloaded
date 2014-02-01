@@ -28,8 +28,7 @@
 	"underscore-brunch": "git+https://github.com/trojanowski/underscore-brunch.git"
   },
   "devDependencies": {
-    "karma": "0.10.2",
-	"karma-qunit": "*"
-
+	  "karma": "0.10.2",
+	  "karma-qunit": "*"
   }
 }
