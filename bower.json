@@ -1,7 +1,7 @@
 {
 	"name": "brunch-with-ember-sideloaded",
 	"repo": "ksnyde/brunch-with-ember-sideloaded",
-	"version": "0.0.4",
+	"version": "0.0.5",
 	"ignore": [
 		"**/.*",
 		"node_modules",
@@ -13,7 +13,7 @@
 		"console-polyfill": "~0.1.0",
 		"jquery": "2.0.*",
 		"ember": "1.*",
-		"bootstrap": "~3.0.*",
+		"bootstrap": "~3.1.*",
 		"handlebars": "1.*",
 		"ember-data-shim": "1.*",
 		"ember-addons.bs_for_ember": "0.5.2",
@@ -21,7 +21,8 @@
 		"swag": "0.*",
 		"lodash": "2.4.*",
 		"moment": "~2.*",
-		"jquery.cookie": "1.4.*"
+		"jquery.cookie": "1.4.*",
+		"ember-simple-auth": "https://github.com/simplabs/ember-simple-auth-component.git"
 	},
 	"overrides": {
 		"modernizr": {

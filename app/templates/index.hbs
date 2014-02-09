@@ -1,6 +1,58 @@
-<h2>Welcome to Ember.js</h2>
-<ul>
-  {{#each item in content}}
-    <li>{{item}}</li>
-  {{/each}}
-</ul>
+<div class="page-header">
+  <h1>Brunch with Ember Sideloaded <small>Ember, Ember Data, LESS, Bootstrap, and much more</small></h1>
+</div>
+<img src="img/EmberJS.png">
+
+<h2>Happy trails ...</h2>
+<span class="glyphicon glyphicon-link"></span>
+<span class="gitLink">
+	<a href="https://github.com/ksnyde/brunch-with-ember-sideloaded">github.com/ksnyde/brunch-with-ember-sideloaded</a>
+</span>
+<br/>
+{{outlet}}
+&nbsp;<br/>
+
+{{#if showDetails}}
+
+	<p>
+		<h2>Software Installed</h2>
+		<h3>Core</h3>
+		<ul>
+			<li>Ember Core</li>
+			<li>Ember Data</li>
+			<li>Handlebars</li>
+		</ul>
+		<h3>Functional Goodies</h3>
+		<ul>
+			<li><a href="http://twitter.github.io/bootstrap/">Bootstrap 3</a></li>
+			<li><a href="https://github.com/ember-addons/bootstrap-for-ember">Bootstrap for Ember</a></li>
+			<li><a href="http://fontawesome.io/">Font Awesome 4</a></li>
+			<li><a href="http://momentjs.com">MomentJS</a></li>
+			<li><a href="http://elving.github.io/swag/">Swag</a></li>
+			<li><a href="http://lodash.com/docs">Lodash</a></li>
+		</ul>
+		<h3>Infrastructural Goodies</h3>
+		<ul>
+			<li><a href="http://html5boilerplate.com">HTML5 Boilerplate</a></li>
+			<li><a href="http://modernizr.com/">Modernizr</a></li>
+			<li><a href="http://necolas.github.io/normalize.css/">Normalise CSS</a></li>
+		</ul>
+	</p>
+
+	<p>
+		Pretty darn cool, isn't it. If you're not happy now, you'll never be. :)
+	</p>
+
+	<p>
+		{{bs-button title="Hide Details" clicked="detailsToggle"}}
+	</p>
+
+{{else}}
+	<p>
+		{{bs-button title="Show Details" clicked="detailsToggle"}}
+	</p>
+{{/if}}
+
+<br/>&nbsp;<br/>
+<span class="small-print">
+	Note: <span class="message">the nifty little button above was created using the Boostrap for Ember component.<br/> Check it's usage out in the <code>application.hbs</code> template.

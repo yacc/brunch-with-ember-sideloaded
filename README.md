@@ -70,6 +70,10 @@ scaffolt template <name> 			→ app/templates			name.hbs
 ```
 There's a few more commands you can use with scaffolt and also instruction on how to create your own generators, so make sure you check out the [docs](https://github.com/paulmillr/scaffolt#readme).
 
+## Authentication ##
+
+The number of applications that *don't* need authenication are becoming fewer and fewer and going through the steps of setting up your own solution is cumbersome and unnecessary. I have now included Simplabs' `ember-simple-auth` as a bower package and have taken some basic steps to get it setup for you "out of the box" (or at least darn close). The documentation that is provided ([github](https://github.com/simplabs/ember-simple-auth), [docs](http://ember-simple-auth.simplabs.com/api.html)) are very well written and you should go through these before anything else. With the setup guide read, you should now look at the source that comes with this brunch receipe and you'll see that most of the mixins needed to start using this are already in place. I have also extended the `Ember.SimpleAuth.Autheicators.OAuth2` object (find it in  `/objects/CustomAuthenticator`) but I've set the properties to the default values. This is just so you can modify these more easily. 
+
 ## Testing
 You can write your tests in the `test` folder, just make sure they are named `*_test.js`. You can customize the test to user PhantomJS, Chrome, Firefox, Safari or Opera on the `karma.conf.js` file in the root directory. There's a lot of other settings there as well. Run tests with:
 

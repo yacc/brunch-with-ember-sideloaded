@@ -11,6 +11,13 @@ module.exports = App = Ember.Application.createWithMixins(Bootstrap.Register,{
   LOG_ACTIVE_GENERATION         : true 
 });
 
+Ember.Application.initializer({
+  name: 'authentication',
+  initialize: function(container, application) {
+    Ember.SimpleAuth.setup(application);
+  }
+});
+
 Ember.RSVP.configure('onerror', function(e) {
   console.log(e.message); 
   console.log(e.stack);

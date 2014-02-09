@@ -10,11 +10,13 @@ window.App = require ('app');
 
 // ===== Router =====
 App.Router.map(function() {
+	this.route('login');
 	this.resource('index', { path: '/' }, function() {});
 });
 
 // ===== Routes =====
-
+require('routes/ApplicationRoute');
+require('routes/AuthenticatedRoute'); // any routes that extend this will require logging in
 
 // ===== Controllers =====
 require('controllers/ApplicationController');
@@ -34,4 +36,6 @@ require('controllers/ApplicationController');
 
 // ===== Templates =====
 require ('templates/application');
+require ('templates/index');
+require ('templates/login');
 
