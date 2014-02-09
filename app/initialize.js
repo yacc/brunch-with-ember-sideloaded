@@ -19,7 +19,7 @@ require('routes/ApplicationRoute');
 require('routes/AuthenticatedRoute'); // any routes that extend this will require logging in
 
 // ===== Controllers =====
-require('controllers/ApplicationController');
+require('controllers/IndexController');
 
 // ===== Store =====
 
