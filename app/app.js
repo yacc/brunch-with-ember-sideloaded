@@ -14,7 +14,7 @@ module.exports = App = Ember.Application.createWithMixins(Bootstrap.Register,{
 Ember.Application.initializer({
   name: 'authentication',
   initialize: function(container, application) {
-    Ember.SimpleAuth.setup(application);
+    Ember.SimpleAuth.setup(container, application);
   }
 });
 
