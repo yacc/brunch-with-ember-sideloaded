@@ -12,10 +12,13 @@ module.exports = App = Ember.Application.createWithMixins(Bootstrap.Register,{
 });
 
 Ember.Application.initializer({
-  name: 'authentication',
-  initialize: function(container, application) {
-    Ember.SimpleAuth.setup(container, application);
-  }
+	name: 'authentication',
+	initialize: function(container, application) {
+		container.register('app:authenticators:custom', App.CustomAuthenticator);
+		Ember.SimpleAuth.setup(container,application,{
+			authorizerFactory: 'authorizer:oauth2-bearer'
+		});
+	}
 });
 
 Ember.RSVP.configure('onerror', function(e) {

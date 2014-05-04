@@ -15,15 +15,15 @@
     "start": "brunch watch --server"
   },
   "dependencies": {
-    "javascript-brunch": ">= 1.0 <= 1.7.1",
+    "javascript-brunch": ">= 1.0 <= 1.8",
 	
-    "css-brunch": ">= 1.0 <= 1.7.1",
-    "less-brunch": ">= 1.0 <= 1.7.1",
+    "css-brunch": ">= 1.0 <= 1.8",
+    "less-brunch": ">= 1.0 <= 1.8",
 	
-    "uglify-js-brunch": ">= 1.0 <= 1.7.1",
-    "clean-css-brunch": ">= 1.0 <= 1.7.1",
+    "uglify-js-brunch": ">= 1.0 <= 1.8",
+    "clean-css-brunch": ">= 1.0 <= 1.8",
 	
-    "auto-reload-brunch": ">= 1.0 <= 1.7.1",
+    "auto-reload-brunch": ">= 1.0 <= 1.8",
     "ember-handlebars-brunch": "git+https://github.com/bartsqueezy/ember-handlebars-brunch.git",
 	"underscore-brunch": "git+https://github.com/trojanowski/underscore-brunch.git"
   },
