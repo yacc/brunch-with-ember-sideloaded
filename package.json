@@ -26,9 +26,5 @@
     "auto-reload-brunch": ">= 1.0 <= 1.8",
     "ember-handlebars-brunch": "git+https://github.com/bartsqueezy/ember-handlebars-brunch.git",
 	"underscore-brunch": "git+https://github.com/trojanowski/underscore-brunch.git"
-  },
-  "devDependencies": {
-	  "karma": "0.10.2",
-	  "karma-qunit": "*"
   }
 }
